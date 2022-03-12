@@ -110,5 +110,5 @@ $ docker-compose up
 Connect to the database server
 
 ```bash
-$ docker exec -it mysql_mysql_1 /bin/sh
+$ docker exec -it mysql-container /bin/sh
 ```
