@@ -5,7 +5,7 @@ services:
   mysql:
     restart: always
     image: mysql:latest
-    container_name: mysql-container
+    container_name: mysql-mysql-container
     ports:
       - 3306:3306
     volumes:
@@ -19,7 +19,6 @@ services:
   nginx:
     restart: always
     image: nginx:stable-alpine
-    container_name: nginx-container
     ports:
       - 80:80
     volumes:
@@ -31,13 +30,11 @@ services:
   php:
     restart: always
     image: php:7.4-fpm-alpine
-    container_name: php-container
     volumes:
       - ./data/html:/var/www/html 
 
   phpmyadmin:
         image: phpmyadmin/phpmyadmin
-        container_name: pma-container
         environment:
             PMA_HOST: mysql
             PMA_USER: dbuser
