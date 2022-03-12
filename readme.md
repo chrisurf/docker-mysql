@@ -1,6 +1,6 @@
 # Docker container for MySQL
 
-*This repo got you covered, if you want to quickly set up a mysql database on your machine. All you need is (docker)[htttp://docker.com] installed on your machine and you are good to go.*
+*This repo got you covered, if you want to quickly set up a mysql database on your machine. All you need is [docker](htttp://docker.com) installed on your machine and you are good to go.*
 
 **Get started**
 
