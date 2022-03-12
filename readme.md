@@ -24,11 +24,11 @@ Before you can mess with mysql you need to open the mysql tool. At this point yo
 # mysql -u root -p
 ```
 
-Btw. the password is *"secret"* for testing purposes. Normally you would not use the root user since it comes with maximum privileges for anything and it would also have a much more secure password.
+Btw. the password is just *"secret"* which obiously is only for testing purposes. Normally you would use a more secure password and not use a root user since this comes with maximum privileges.
 
 You can exit the mysql tool by typing `quit` or `exit`.
 
-Here you can also check out the version but with the mysql command and so much more. Not again the promt has changed.
+Here you can also check out the version but with the mysql command and so much more. Finally the prompt has changed again.
 
 ```bash
 > SELECT @@version;
@@ -60,7 +60,7 @@ Create database table
 );
 ```
 
-*crerate a sample table*
+*create a sample table*
 ```bash
 > CREATE TABLE food (
     Id int NOT NULL AUTO_INCREMENT,
