@@ -40,7 +40,7 @@ services:
         container_name: pma-container
         environment:
             PMA_HOST: mysql
-            PMA_USER: root
+            PMA_USER: dbuser
             PMA_PASSWORD: secret
         ports:
             - "8081:80"
