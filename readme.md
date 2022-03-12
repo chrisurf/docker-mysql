@@ -26,7 +26,9 @@ Before you can mess with mysql you need to open the mysql tool. At this point yo
 
 Btw. the password is *"secret"* for testing purposes. Normally you would not use the root user since it comes with maximum privileges for anything and it would also have a much more secure password.
 
-Now you again check out the version and so much more. Not again the promt has changed.
+You can exit the mysql tool by typing `quit` or `exit`.
+
+Here you can also check out the version but with the mysql command and so much more. Not again the promt has changed.
 
 ```bash
 > SELECT @@version;
