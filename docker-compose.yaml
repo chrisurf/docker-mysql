@@ -37,8 +37,8 @@ services:
         image: phpmyadmin/phpmyadmin:${PMA_VERSION:-latest}
         environment:
             PMA_HOST: database
-            PMA_USER: ${DB_USER:-dbuser}
-            PMA_PASSWORD: ${DB_PASSWORD:-secret}
+            PMA_USER: ${PMA_USER:-root}
+            PMA_PASSWORD: ${PMA_PASSWORD:-secret}
         ports:
             - "8081:80"
         restart: always
