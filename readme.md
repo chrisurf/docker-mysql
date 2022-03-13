@@ -85,7 +85,7 @@ Show all tables in the database
 Show all rows in the table
 
 ```bash
-> SELECT * FROM table_name;
+> SELECT * FROM your_table_name;
 ```
 
 **phpmyadmin**
