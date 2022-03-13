@@ -4,14 +4,14 @@ services:
   
   database:
     restart: always
-    image: mysql:${MYSQl_VERSION:-latest}
+    image: mysql:${DB_VERSION:-latest}
     container_name: mysql-mysql-container
     ports:
       - 3306:3306
     volumes:
       - ./data/mysql:/var/lib/mysql
     environment:
-      MYSQL_DATABASE: ${MYSQL_DATABASE:-db}
+      MYSQL_DATABASE: ${DB_NAME:-db}
       MYSQL_USER: ${DB_USER:-dbuser}
       MYSQL_PASSWORD: ${DB_PASSWORD:-secret}
       MYSQL_ROOT_PASSWORD: ${DB_ROOT_PASSWORD:-secret}
