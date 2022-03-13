@@ -4,7 +4,7 @@
 
 **Get started**
 
-The following script will launch the docker container connect your terminal to the mysql server and open phpmyadmin in your browser. Make sure you have started docker before running this script.
+The following script will launch the docker container and connect your terminal to the mysql server and open phpmyadmin in your browser. Make sure you have started docker before running this script.
 
 ```bash
 $ ./run.sh
