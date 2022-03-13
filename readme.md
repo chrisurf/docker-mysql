@@ -45,7 +45,7 @@ Show all databases
 Connect to a database
 
 ```bash
-> USE database_name;
+> USE your_database_name;
 ```
 
 Create a database table
@@ -90,7 +90,7 @@ Show all rows in the table
 
 **phpmyadmin**
 
-So what if you want to get a bigger picture of everything goign on in your database serve? How to visualize all databases, tables, rows, etc. in a easier to digest way? Or let`s check, if there is a way to create all this stuff a little easier? Well you guest it, phpmyadmin got you covered. This is a webbased databases administration tool that provides a GUI to manage databases, tables and great other features. Now that you have the docker container running, you can acces phpmyadmin from your web browser with the following link:
+So what if you want to get a bigger picture of everything goign on in your database serve? How to visualize all databases, tables, rows, etc. in a easier to digest way? Or let`s check, if there is a way to create all this stuff a little easier eg. add a couple of data rows in your test table? Well you guest it, phpmyadmin got you covered. This is a webbased databases administration tool that provides a GUI to manage databases, tables and great other features. Now that you have the docker container running, you can acces phpmyadmin from your web browser with the following link:
 [http://localhost:8081](http://localhost:8081)
 
 **Basic Docker commands**
