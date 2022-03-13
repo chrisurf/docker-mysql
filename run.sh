@@ -1,3 +1,4 @@
+#!/bin/bash
 echo "Starting database container.."
 docker-compose up -d
 
