@@ -2,23 +2,23 @@ version: '3.9'
 
 services:
   
-  mysql:
+  database:
     restart: always
-    image: mysql:latest
+    image: mysql:${MYSQl_VERSION:-latest}
     container_name: mysql-mysql-container
     ports:
       - 3306:3306
     volumes:
       - ./data/mysql:/var/lib/mysql
     environment:
-      MYSQL_DATABASE: db
-      MYSQL_USER: dbuser
-      MYSQL_PASSWORD: secret
-      MYSQL_ROOT_PASSWORD: secret
-      
+      MYSQL_DATABASE: ${MYSQL_DATABASE:-db}
+      MYSQL_USER: ${DB_USER:-dbuser}
+      MYSQL_PASSWORD: ${DB_PASSWORD:-secret}
+      MYSQL_ROOT_PASSWORD: ${DB_ROOT_PASSWORD:-secret}
+
   nginx:
     restart: always
-    image: nginx:stable-alpine
+    image: nginx:${NGINX_VERSION:-stable-alpine}
     ports:
       - 80:80
     volumes:
@@ -29,16 +29,16 @@ services:
 
   php:
     restart: always
-    image: php:7.4-fpm-alpine
+    image: php:${PHP_VERSION:-7.4-fpm-alpine}
     volumes:
       - ./data/html:/var/www/html 
 
   phpmyadmin:
-        image: phpmyadmin/phpmyadmin
+        image: phpmyadmin/phpmyadmin:${PMA_VERSION:-latest}
         environment:
-            PMA_HOST: mysql
-            PMA_USER: dbuser
-            PMA_PASSWORD: secret
+            PMA_HOST: database
+            PMA_USER: ${DB_USER:-dbuser}
+            PMA_PASSWORD: ${DB_PASSWORD:-secret}
         ports:
             - "8081:80"
         restart: always
