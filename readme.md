@@ -28,7 +28,7 @@ Btw. the password is just *"secret"* which obiously is only for testing purposes
 
 You can exit the mysql tool by typing `quit` or `exit`.
 
-Here you can also check out the version but with the mysql command and so much more. Finally the prompt has changed again.
+Finally the prompt has changed again and so you can check out the mysql version by using the mysql command. 
 
 ```bash
 > SELECT @@version;
@@ -36,19 +36,19 @@ Here you can also check out the version but with the mysql command and so much m
 
 Here are a couple of basic mysql commands to get you going.
 
-Show all database
+Show all databases
 
 ```bash
 > SHOW DATABASES;
 ```
 
-Connect to database
+Connect to a database
 
 ```bash
 > USE database_name;
 ```
 
-Create database table
+Create a database table
 
 ```bash
 > CREATE TABLE Persons (
@@ -60,7 +60,7 @@ Create database table
 );
 ```
 
-*create a sample table*
+Create another table
 ```bash
 > CREATE TABLE food (
     Id int NOT NULL AUTO_INCREMENT,
@@ -76,34 +76,34 @@ Create database table
 );
 ```
 
-Show all tables in database
+Show all tables in the database
 
 ```bash
 > SHOW TABLES;
 ```
 
-Show all rows in table
+Show all rows in the table
 
 ```bash
 > SELECT * FROM table_name;
 ```
 
 **phpmyadmin**
-But what if you want to get a bigger picture of all databases and tables and visualize all in easier to digest way? Well phpmyadmin got you covered. This is a webbased databases administration tool that offers visualizations of all your databases, tables, database users, etc. It helps to manage your database and provides a lot of other features. It is a great tool to manage your databases.
-You can acces the phpmyadmin from your web browser by opening the following link:
+
+So what if you want to get a bigger picture of everything goign on in your database serve? How to visualize all databases, tables, rows, etc. in a easier to digest way? Well you guest it, phpmyadmin got you covered. This is a webbased databases administration tool that provides a GUI to manage databases, tables, users and great other features. Now that you have the docker container running, you can acces phpmyadmin from your web browser with the following link:
 [http://localhost:8081](http://localhost:8081)
 
 **Basic Docker commands**
 
 *From your machine you can exectute the following commands*
 
-Shutdown docker container
+Shutdown docker the container
 
 ```bash
 $ docker-compose down
 ```
 
-Start docker container
+Start docker the container
 
 ```bash
 $ docker-compose up -d
