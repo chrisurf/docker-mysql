@@ -31,7 +31,7 @@ You can exit the mysql tool by typing `quit` or `exit`.
 Finally the prompt has changed again and so you can check out the mysql version by using the mysql command. 
 
 ```bash
-> SELECT @@version;
+> SELECT @version;
 ```
 
 Here are a couple of basic mysql commands to get you going.
@@ -53,8 +53,8 @@ Create a database table
 ```bash
 > CREATE TABLE Persons (
     PersonID int,
-    LastName varchar(255),
     FirstName varchar(255),
+    LastName varchar(255),
     Address varchar(255),
     City varchar(255)
 );
@@ -74,6 +74,12 @@ Create another table
     TotalPrice varchar(255),
     PRIMARY KEY (Id)
 );
+```
+
+Add a data record into a table
+```bash
+> INSERT INTO Persons (PersonID, LastName, FirstName, Address, City)
+  VALUES (1, John, Doe, Notting Hill, London);
 ```
 
 Show all tables in the database
